@@ -64,7 +64,7 @@ function! s:Ruby_Matchit()
 
 endfunction
 
-nnoremap <buffer> \\\\\ %
-nnoremap <buffer> % :call <SID>Ruby_Matchit()<CR>
+autocmd FileType ruby nnoremap <buffer> \\\\\ %
+autocmd FileType ruby nnoremap <buffer> % :call <SID>Ruby_Matchit()<CR>
 
 
